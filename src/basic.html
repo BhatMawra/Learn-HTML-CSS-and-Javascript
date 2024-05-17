@@ -1653,101 +1653,111 @@ When JavaScript is used in HTML pages, JavaScript can "react" on these events. -
 
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>JavaScript Strings</h1>
+  <h1>JavaScript Strings</h1>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<script>
-let text = "John Doe";  // String written inside quotes
-document.getElementById("demo").innerHTML = text;
-</script>
+  <script>
+    let text = "John Doe";  // String written inside quotes
+    document.getElementById("demo").innerHTML = text;
+  </script>
 
 </body>
+
 </html>
 
 <!-- ###################################################################################################################################### -->
 
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>JavaScript Strings</h1>
-<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+  <h1>JavaScript Strings</h1>
+  <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<script>
-let answer1 = "It's alright";
-let answer2 = "He is called 'Johnny'";
-let answer3 = 'He is called "Johnny"'; 
+  <script>
+    let answer1 = "It's alright";
+    let answer2 = "He is called 'Johnny'";
+    let answer3 = 'He is called "Johnny"';
 
-document.getElementById("demo").innerHTML =
-answer1 + "<br>" + answer2 + "<br>" + answer3; 
-</script>
+    document.getElementById("demo").innerHTML =
+      answer1 + "<br>" + answer2 + "<br>" + answer3; 
+  </script>
 
 </body>
+
 </html>
 
 <!-- ###################################################################################################################################### -->
 
 <!DOCTYPE html>
 <html>
+
 <body>
-<h1>JavaScript Template Strings</h1>
-<p>With back-ticks, you can use both single and double quotes inside a string:</p>
+  <h1>JavaScript Template Strings</h1>
+  <p>With back-ticks, you can use both single and double quotes inside a string:</p>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<p>Templates not supported in Internet Explorer.</p>
+  <p>Templates not supported in Internet Explorer.</p>
 
-<script>
-let text = `He's often called "Johnny"`;
-document.getElementById("demo").innerHTML = text;
-</script>
+  <script>
+    let text = `He's often called "Johnny"`;
+    document.getElementById("demo").innerHTML = text;
+  </script>
 
 </body>
+
 </html>
 
 <!-- ###################################################################################################################################### -->
 
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>JavaScript Strings</h1>
-<h2>The length Property</h2>
+  <h1>JavaScript Strings</h1>
+  <h2>The length Property</h2>
 
-<p>The length of the string is:</p>
-<p id="demo"></p>
+  <p>The length of the string is:</p>
+  <p id="demo"></p>
 
-<script>
-let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-document.getElementById("demo").innerHTML = text.length;
-</script>
+  <script>
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("demo").innerHTML = text.length;
+  </script>
 
 </body>
+
 </html>
 
 <!-- ###################################################################################################################################### -->
 
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>JavaScript Strings</h1>
+  <h1>JavaScript Strings</h1>
 
-<p>The escape sequence \" inserts a double quote in a string.</p>
+  <p>The escape sequence \" inserts a double quote in a string.</p>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<script>
-let text = "We are the so-called \"Vikings\" from the north.";
-document.getElementById("demo").innerHTML = text; 
-</script>
+  <script>
+    let text = "We are the so-called \"Vikings\" from the north.";
+    document.getElementById("demo").innerHTML = text; 
+  </script>
 
 </body>
+
 </html>
 
 <!-- #################################################################################################################################### -->
@@ -1756,44 +1766,97 @@ document.getElementById("demo").innerHTML = text;
 
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>JavaScript Strings</h1>
-<h2>The indexOf() Method</h2>
+  <h1>JavaScript Strings</h1>
+  <h2>The indexOf() Method</h2>
 
-<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
-<p>The position of the first occurrence of "locate" is:</p>
-<p id="demo"></p>
+  <p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+  <p>The position of the first occurrence of "locate" is:</p>
+  <p id="demo"></p>
 
-<script>
-let text = "Please locate where 'locate' occurs!";
-let index = text.indexOf("locate");
-document.getElementById("demo").innerHTML = index; 
-</script>
+  <script>
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.indexOf("locate");
+    document.getElementById("demo").innerHTML = index; 
+  </script>
 
 </body>
+
 </html>
 
 <!-- ************************************************************************************************************************************* -->
 
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>JavaScript Strings</h1>
-<h2>The lastIndexOf() Method</h2>
+  <h1>JavaScript Strings</h1>
+  <h2>The lastIndexOf() Method</h2>
 
-<p>The position of the last occurrence of "locate" is:</p>
+  <p>The position of the last occurrence of "locate" is:</p>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<script>
-let text = "Please locate where 'locate' occurs!";
-let index = text.lastIndexOf("locate");
-document.getElementById("demo").innerHTML = index;
-</script>
+  <script>
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.lastIndexOf("locate");
+    document.getElementById("demo").innerHTML = index;
+  </script>
 
 </body>
+
+</html>
+
+<!-- £££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££ -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>JavaScript Strings</h1>
+  <h2>The indexOf() Method</h2>
+
+  <p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+  <p id="demo"></p>
+
+  <script>
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.indexOf("John");
+    document.getElementById("demo").innerHTML = index;
+  </script>
+
+</body>
+
+</html>
+
+<!-- £££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££ -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>JavaScript Strings</h1>
+  <h2>The lastIndexOf() Method</h2>
+
+  <p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+  <p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15,
+    and search to the beginning.</p>
+
+  <p id="demo"></p>
+
+  <script>
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.lastIndexOf("locate", 15);
+    document.getElementById("demo").innerHTML = index; 
+  </script>
+
+</body>
+
 </html>
 
 <!-- £££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££ -->
@@ -1803,24 +1866,20 @@ document.getElementById("demo").innerHTML = index;
 <body>
 
 <h1>JavaScript Strings</h1>
-<h2>The indexOf() Method</h2>
+<h2>The search() Method</h2>
 
-<p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+<p>The search() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
 <p id="demo"></p>
 
 <script>
 let text = "Please locate where 'locate' occurs!";
-let index = text.indexOf("John");
-document.getElementById("demo").innerHTML = index;
+let index = text.search("locate");
+document.getElementById("demo").innerHTML = index; 
 </script>
 
 </body>
 </html>
 
-<!-- £££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££ -->
-
-
-
-
-
+<!-- ££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££ -->
 
