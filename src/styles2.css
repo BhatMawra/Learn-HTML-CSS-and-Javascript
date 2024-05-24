@@ -23,6 +23,7 @@ body {
 }
 
 nav {
+    display: inline;
     background-color: rgba(51, 51, 51, 0.8);
     padding: 10px 0;
     position: fixed;
