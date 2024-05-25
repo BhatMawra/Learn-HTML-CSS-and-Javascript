@@ -7,6 +7,10 @@
         font-size: 16px;
     }
 
+    nav ul {
+        flex-direction: column;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -17,15 +21,15 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-image: url('https://via.placeholder.com/1920x1080');
-    background-size: cover;
+    background-image: url('https://www.freepik.com/free-photo/flat-lay-office-desk-concept_5106190.htm#fromView=search&page=1&position=48&uuid=54dccb8d-8feb-42f9-a2a8-d90e9d0fc9fc'); /* Replace with your chosen background image URL */
+    background-size:cover;
     background-attachment: fixed;
 }
 
 nav {
-    display: inline;
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(111, 227, 219, 0.8);
     padding: 10px 0;
+    font-weight: bolder;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,31 +37,31 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style:none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content:flex-start;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: black(10, 122, 119);
     text-decoration: none;
     font-size: 18px;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(114, 166, 222, 0.622);
     border-radius: 5px;
 }
 
 h1 {
-    color: #333;
+    color: black;
     text-align: center;
     margin-top: 100px;
 }
@@ -68,70 +72,22 @@ p {
     text-align: center;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-}
-
 a {
     display: block;
     text-align: center;
     margin-top: 20px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
+    color: #ffff00;
     text-decoration: underline;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-nav {
-    background-color: rgba(51, 51, 51, 0.8);
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+a:hover {
     text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-}
-
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
+    background-color: br;
     color: white;
-    text-align: center;
+    text-align:left;
     padding: 10px 0;
     position: fixed;
     width: 100%;
