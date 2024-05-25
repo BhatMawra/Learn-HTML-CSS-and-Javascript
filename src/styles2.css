@@ -102,7 +102,7 @@ footer {
     --accent-color: #FF5733;
     --background-color: #f4f4f4;
     --text-color: #333;
-    --header-height: 40px;
+    --header-height: 0px;
 }
 
 /* General styles */
