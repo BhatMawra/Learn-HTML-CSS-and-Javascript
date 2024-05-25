@@ -823,4 +823,4 @@ Feel free to ask any questions or request further explanations on specific parts
 
 By the end of this lab, you should have a basic understanding of HTML structure and how to apply CSS styles to create a simple, responsive web page. You can continue to experiment with more HTML elements and CSS properties to enhance your web design skills.
 
-Feel free to ask any questions or request further explanations on specific parts of the lab. Happy coding!
+
