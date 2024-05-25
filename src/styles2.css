@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+/* /* @media (max-width: 600px) {
     h1 {
         font-size: 24px;
     }
@@ -21,7 +21,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-image: url('https://www.freepik.com/free-photo/flat-lay-office-desk-concept_5106190.htm#fromView=search&page=1&position=48&uuid=54dccb8d-8feb-42f9-a2a8-d90e9d0fc9fc'); /* Replace with your chosen background image URL */
+    background-image: url('https://www.freepik.com/free-photo/flat-lay-office-desk-concept_5106190.htm#fromView=search&page=1&position=48&uuid=54dccb8d-8feb-42f9-a2a8-d90e9d0fc9fc'); 
     background-size:cover;
     background-attachment: fixed;
 }
@@ -52,7 +52,7 @@ nav ul li a {
     color: black(10, 122, 119);
     text-decoration: none;
     font-size: 18px;
-    /* padding: 5px 10px; */
+    //padding: 5px 10px; 
 }
 
 nav ul li a:hover {
@@ -92,4 +92,194 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+} 
+  */
+
+ /* Variables for theme colors */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: rgba(51, 51, 51, 0.8); /* Added transparency */
+    --accent-color: #FF5733;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-height: 40px;
+}
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.9); /* Added white background with transparency */
+    border-radius: 10px;
+}
+
+/* Header styles */
+header {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 20px 0;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    flex: 1;
+    text-align: right;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: var(--primary-color);
+}
+
+/* Section styles */
+section {
+    padding: 100px 0; /* Adjusted padding to account for fixed header */
+    border-bottom: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.9); /* Added white background with transparency */
+    border-radius: 10px;
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+section h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#projects .project {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#projects .project h3 {
+    margin-top: 0;
+}
+
+#projects .project:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+#contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#contact form label {
+    margin-top: 10px;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact form button {
+    padding: 10px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#contact form button:hover {
+    background: var(--accent-color);
+}
+
+/* Footer styles */
+footer {
+    background: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contact form {
+        grid-template-columns: 1fr;
+    }
 }
